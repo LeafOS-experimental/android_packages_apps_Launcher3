@@ -148,6 +148,8 @@ public final class Utilities {
 
     public static final String KEY_DT_GESTURE = "pref_dt_gesture";
 
+    public static final String KEY_THEMED_ICONS_EVERYWHERE = "pref_themed_icons_everywhere";
+
     /**
      * Indicates if the device has a debug build. Should only be used to store additional info or
      * add extra logging and not for changing the app behavior.
@@ -962,5 +964,10 @@ public final class Utilities {
     public static boolean isDoubleTapGestureEnabled(Context context) {
         SharedPreferences prefs = getPrefs(context.getApplicationContext());
         return prefs.getBoolean(KEY_DT_GESTURE, true);
+    }
+
+    public static boolean isThemedIconsEverywhereEnabled(Context context) {
+        SharedPreferences prefs = getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_THEMED_ICONS_EVERYWHERE, false);
     }
 }

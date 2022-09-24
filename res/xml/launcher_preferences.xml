@@ -57,6 +57,13 @@
         android:defaultValue="true"
         android:persistent="true"/>
 
+    <SwitchPreference
+        android:key="pref_themed_icons_everywhere"
+        android:title="@string/pref_themed_icons_everywhere_title"
+        android:summary="@string/pref_themed_icons_everywhere_summary"
+        android:defaultValue="false"
+        android:persistent="true"/>
+
     <androidx.preference.PreferenceScreen
         android:key="pref_developer_options"
         android:persistent="false"
