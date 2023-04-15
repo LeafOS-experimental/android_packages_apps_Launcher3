@@ -224,9 +224,10 @@ public class WorkspaceTouchListener extends GestureDetector.SimpleOnGestureListe
 
     @Override
     public boolean onDoubleTap(MotionEvent event) {
-        if (Utilities.isDoubleTapGestureEnabled(mContext))
+        if (Utilities.isDoubleTapGestureEnabled(mContext)) {
             VibratorWrapper.INSTANCE.get(mContext).vibrate(VibratorWrapper.EFFECT_CLICK);
             mPm.goToSleep(event.getEventTime());
+        }
         return true;
     }
 }
