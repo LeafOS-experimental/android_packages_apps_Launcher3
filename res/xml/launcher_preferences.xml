@@ -65,6 +65,14 @@
         launcher:iconSpaceReserved="false" />
 
     <SwitchPreference
+        android:key="pref_forced_monochrome_icons"
+        android:title="@string/pref_force_monochrome_themed_icons_title"
+        android:summary="@string/pref_force_monochrome_themed_icons_summary"
+        android:defaultValue="false"
+        android:persistent="true"
+        launcher:iconSpaceReserved="false" />
+
+    <SwitchPreference
         android:key="pref_allow_wallpaper_zooming"
         android:title="@string/allow_wallpaper_zooming"
         android:summary="@string/allow_wallpaper_zooming_summary"
